@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4309 The Plaza</title>
+<meta name="description" content="Build-ready fourplex site in Charlotte, NC 28205. Four platted townhome lots with civil, NCDOT and residential plan approvals done. $360,000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Playfair+Display:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#ED2127; --ink:#231F20; --muted:#5f5f5f; --line:#e6e2da;
+  --bg:#ffffff; --panel:#F5F1E9; --card:#ffffff; --tagbg:rgba(20,20,20,.78);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--ink:#F2EFEA;--muted:#b9b4ac;--line:#3a3733;--bg:#151413;--panel:#201e1c;--card:#1b1a18}
+}
+:root[data-theme="dark"]{--ink:#F2EFEA;--muted:#b9b4ac;--line:#3a3733;--bg:#151413;--panel:#201e1c;--card:#1b1a18}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
+.cap,.eyebrow,nav a,.chip b,.kv th,.btn,.tl b{font-family:"Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow{color:var(--red);font-weight:500;font-size:15px}
+h1,h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;line-height:1.08}
+h1{font-size:clamp(40px,7vw,76px)}
+h2{font-size:clamp(30px,4.4vw,44px);margin:6px 0 18px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+/* header */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{width:44px;height:44px;background:#fff;padding:0;border-radius:2px}
+nav{display:flex;gap:22px;font-size:14px}
+nav a{text-decoration:none;color:var(--muted)} nav a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:500;font-size:15px;padding:12px 20px;border-radius:2px}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+@media (max-width:760px){nav{display:none}}
+/* hero */
+.hero{position:relative}
+.hero img{width:100%;height:min(72vh,720px);object-fit:cover}
+.tag{position:absolute;left:16px;bottom:16px;background:var(--tagbg);color:#fff;font:500 13px "Barlow Condensed",sans-serif;letter-spacing:.14em;padding:6px 10px;border-radius:4px}
+.intro{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:end;padding:40px 0 8px}
+.intro .sub{font-family:"Barlow Condensed";font-size:20px;letter-spacing:.1em;color:var(--muted);margin-top:8px}
+.price{font-family:"Barlow Condensed";font-weight:600;font-size:clamp(40px,6vw,60px);line-height:1;text-align:right}
+.price small{display:block;font-weight:400;font-size:16px;letter-spacing:.12em;color:var(--muted);margin-top:6px}
+.cta{display:flex;gap:10px;justify-content:flex-end;margin-top:16px;flex-wrap:wrap}
+@media (max-width:760px){.intro{grid-template-columns:1fr}.price,.cta{text-align:left;justify-content:flex-start}}
+.chips{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:28px 0 8px}
+.chip{background:var(--panel);padding:14px 10px;text-align:center}
+.chip b{display:block;font-family:"Barlow Condensed";font-weight:600;font-size:28px;letter-spacing:.02em;text-transform:none}
+.chip span{font:400 12px "Barlow Condensed";letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:860px){.chips{grid-template-columns:repeat(3,1fr)}}
+/* story */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.lead{font-size:18px}
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.tl div{border-top:3px solid var(--red);padding-top:10px;font-size:14px;color:var(--muted)}
+.tl b{display:block;color:var(--ink);font-weight:600;font-size:19px;letter-spacing:.06em;text-transform:none}
+@media (max-width:760px){.tl{grid-template-columns:1fr 1fr}}
+ul.ck{list-style:none} ul.ck li{position:relative;padding-left:24px;margin-bottom:8px}
+ul.ck li:before{content:"\2713";position:absolute;left:0;color:var(--red);font-weight:700}
+ul.q li:before{content:"?"}
+h3{font:500 16px "Barlow Condensed";letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 12px}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gal figure{background:var(--card);border:1px solid var(--line);cursor:zoom-in;position:relative}
+.gal img{width:100%;aspect-ratio:16/10;object-fit:cover;background:#fff}
+.gal img.contain{object-fit:contain}
+figcaption{font-size:13px;color:var(--muted);padding:8px 12px}
+@media (max-width:640px){.gal{grid-template-columns:1fr}}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.plans figure{border:1px solid var(--line);background:#fff;cursor:zoom-in}
+@media (max-width:760px){.plans{grid-template-columns:1fr}}
+/* tables */
+.kv{width:100%;border-collapse:collapse;font-size:15px}
+.kv th,.kv td{padding:10px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.kv th{font-weight:500;font-size:14px;color:var(--muted);width:48%}
+.kv td{font-weight:500}
+.note{font-size:13px;color:var(--muted);margin-top:10px}
+/* contact */
+.contact{display:flex;gap:20px;align-items:center;background:var(--panel);padding:24px;flex-wrap:wrap}
+.contact img{width:96px;height:96px;border-radius:50%;object-fit:cover}
+.contact .nm{font:600 24px "Barlow Condensed";letter-spacing:.08em}
+.contact .act{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+footer{padding:28px 0 40px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+footer p{margin-bottom:8px}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.lb.on{display:flex} .lb img{max-height:92vh;max-width:96vw;background:#fff}
+.lb button{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="#top" aria-label="Top"><img class="logo" src="img/agency-logo.png" alt="The Agency"></a>
+  <nav><a href="#approvals">Approvals</a><a href="#gallery">Renderings</a><a href="#plans">Floor plans</a><a href="#site">Site</a><a href="#numbers">Numbers</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#contact">Request the packet</a>
+</div></header>
+
+<div class="hero" id="top">
+  <img src="img/hero.jpg" alt="Rendering of four modern 2-story townhomes on The Plaza">
+  <div class="tag">RENDERING · ARTIST'S CONCEPTION OF THE APPROVED PLANS · NOT YET BUILT</div>
+</div>
+
+<div class="wrap">
+  <div class="intro">
+    <div>
+      <div class="eyebrow">Builder &amp; investor opportunity · Fully entitled</div>
+      <h1>4309 The Plaza</h1>
+      <div class="sub">FOUR APPROVED TOWNHOMES · CHARLOTTE, NC 28205</div>
+    </div>
+    <div>
+      <div class="price">$360,000<small>$90,000 PER APPROVED HOME SITE</small></div>
+      <div class="cta"><a class="btn" href="4309-The-Plaza-Builder-Site-Sheet.pdf" download>Download site sheet</a><a class="btn ghost" href="tel:+15089542159">Call Ryan</a></div>
+    </div>
+  </div>
+  <div class="chips">
+    <div class="chip"><b>4</b><span>platted sublots</span></div>
+    <div class="chip"><b>1,475</b><span>heated sf each</span></div>
+    <div class="chip"><b>3 / 2.5</b><span>bed / bath</span></div>
+    <div class="chip"><b>1-car</b><span>garage each</span></div>
+    <div class="chip"><b>N2-B</b><span>zoning</span></div>
+    <div class="chip"><b>90 ft</b><span>frontage</span></div>
+  </div>
+</div>
+
+<section id="approvals"><div class="wrap">
+  <div class="eyebrow">Why builders move on this</div>
+  <h2>Skip the line at the city</h2>
+  <div class="two">
+    <div>
+      <p class="lead">The slow part of an infill townhome project is getting it designed and through the city. On this site that work started in 2023 and finished in February 2026.</p>
+      <p style="margin-top:14px">A builder buys the result: approved civil plans, an approved residential plan set, NCDOT driveway approval and a recorded plat that already splits the land into four lots. Each finished home sells on its own lot, and the design work is done, so you can go straight to permits and pricing.</p>
+    </div>
+    <div>
+      <h3>Already done</h3>
+      <ul class="ck">
+        <li>Sealed civil set: site, grading, erosion control, utilities, landscape and tree save, traffic control (Gateway Design Group)</li>
+        <li>Stamped architectural set for all four units (Urban Design Group, v5)</li>
+        <li>Recorded plat: Lots 1-4 + Green Area, Map Book 75, Page 668</li>
+        <li>Tree-save green area designed in: 2,378 sf, 16.1% of the site (15% required)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tl">
+    <div><b>2023</b>Sketch plan submitted · SKETCH-2023-00230</div>
+    <div><b>Dec 30, 2024</b>Land Development final approval · LDCP-2024-00342</div>
+    <div><b>NCDOT</b>Driveway approval · D102-060-24-00080</div>
+    <div><b>Feb 10, 2026</b>Residential plan review approved · Mecklenburg Project 471645</div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="eyebrow">Renderings &amp; elevations</div>
+  <h2>What gets built</h2>
+  <div class="gal">
+    <figure><img src="img/rendering-front-right.jpg" alt="Architect's 3D view, front and right side"><div class="tag">RENDERING</div><figcaption>Architect's 3D view from the approved plans, front and right side.</figcaption></figure>
+    <figure><img src="img/rendering-rear.jpg" alt="Architect's 3D view of the rear"><div class="tag">RENDERING</div><figcaption>Architect's 3D view of the rear, with a patio off each living area.</figcaption></figure>
+    <figure><img class="contain" src="img/front-elevation.jpg" alt="Front elevation"><figcaption>Front elevation from the approved plans: four 2-story homes, about 80 ft wide in all.</figcaption></figure>
+    <figure><img class="contain" src="img/rear-elevation.jpg" alt="Rear elevation"><figcaption>Rear elevation from the approved plans.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="plans"><div class="wrap">
+  <div class="eyebrow">Floor plans · typical unit</div>
+  <h2>3 bedrooms, 2.5 baths, 1,475 sq ft</h2>
+  <div class="two" style="margin-bottom:24px">
+    <div><h3>Main level · 606 sf</h3><p>Open living and dining across the back with glass doors to the rear patio. Kitchen with an island, eating bar and pantry. Half bath, coat closet, covered entry and an attached 1-car garage.</p></div>
+    <div><h3>Upper level · 869 sf</h3><p>Primary suite across the front with a walk-in closet and a bath with a walk-in shower and private toilet room. Two more bedrooms across the back, a hall bath with tub, and laundry.</p></div>
+  </div>
+  <div class="plans">
+    <figure><img src="img/main-level-plan.jpg" alt="Main level floor plan"></figure>
+    <figure><img src="img/upper-level-plan.jpg" alt="Upper level floor plan"></figure>
+  </div>
+  <p class="note">Approximate room sizes from the approved plan set. Not to scale; subject to change. Units mirror.</p>
+</div></section>
+
+<section id="site"><div class="wrap">
+  <div class="eyebrow">The site</div>
+  <h2>Platted, zoned and laid out</h2>
+  <div class="two">
+    <div class="plans" style="grid-template-columns:1fr"><figure><img src="img/site-plan.jpg" alt="Approved site plan excerpt"></figure></div>
+    <div>
+      <table class="kv">
+        <tr><th>Parcels (convey together)</th><td>091-031-36, -37, -38, -39, -40</td></tr>
+        <tr><th>Legal</th><td>Lots 1-4 + Green Area, MB 75 Pg 668</td></tr>
+        <tr><th>Total site area, per site plan</th><td>0.361 ac (15,727 sf)</td></tr>
+        <tr><th>Zoning · permitted use</th><td>N2-B · quadruplex on sublots</td></tr>
+        <tr><th>Frontage on The Plaza</th><td>90 ft</td></tr>
+        <tr><th>Building coverage</th><td>38% (60% allowed)</td></tr>
+        <tr><th>Building height</th><td>22'-6" (48' allowed)</td></tr>
+        <tr><th>Setbacks</th><td>17 ft front · 5 ft side · 20 ft rear</td></tr>
+        <tr><th>Bedrooms · parking</th><td>12 · 4 garage + 4 driveway</td></tr>
+        <tr><th>Water · sewer</th><td>City · city</td></tr>
+      </table>
+    </div>
+  </div>
+</div></section>
+
+<section id="numbers"><div class="wrap">
+  <div class="two">
+    <div>
+      <div class="eyebrow">The numbers</div>
+      <h2>$90,000 per home site</h2>
+      <table class="kv">
+        <tr><th>List price</th><td>$360,000</td></tr>
+        <tr><th>Per approved home site (4)</th><td>$90,000</td></tr>
+        <tr><th>Per heated sq ft to be built (5,900)</th><td>$61</td></tr>
+        <tr><th>Financing</th><td>Cash, conventional, or other terms acceptable to Seller</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="eyebrow">The location</div>
+      <h2>Minutes from NoDa</h2>
+      <table class="kv">
+        <tr><th>NoDa (36th &amp; N Davidson)</th><td>1.6 mi · about 5 min</td></tr>
+        <tr><th>Uptown Charlotte</th><td>about 5 mi · about 10 min</td></tr>
+        <tr><th>CLT airport</th><td>about 13 mi · about 27 min</td></tr>
+      </table>
+      <p class="note">Typical off-peak drive estimates.</p>
+    </div>
+  </div>
+  <div style="margin-top:40px">
+    <h3>Buyer to verify</h3>
+    <ul class="ck q">
+      <li>Building permit status and expiration</li>
+      <li>Transferability of the plans and permits to a new owner</li>
+      <li>Charlotte Water tap fees (the civil approval does not include Charlotte Water)</li>
+      <li>Ownership and maintenance of the green area</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="eyebrow">Get the builder packet</div>
+  <h2>Approval package, stamped plans, plat</h2>
+  <div class="contact">
+    <img src="img/ryan.jpg" alt="Ryan Palmer">
+    <div>
+      <div class="nm">RYAN PALMER</div>
+      <div>Founding Partner, Luxury Division · The Agency Charlotte</div>
+      <div><a href="tel:+15089542159">(508) 954-2159</a> · <a href="mailto:ryan.palmer@theagencyre.com?subject=4309%20The%20Plaza%20builder%20packet">ryan.palmer@theagencyre.com</a></div>
+    </div>
+    <div class="act">
+      <a class="btn" href="mailto:ryan.palmer@theagencyre.com?subject=4309%20The%20Plaza%20builder%20packet">Email for the packet</a>
+      <a class="btn ghost" href="4309-The-Plaza-Builder-Site-Sheet.pdf" download>Site sheet (PDF)</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>Renderings are artist's conceptions of the approved plans; the homes are not yet built and finished homes may differ. Approval details come from the approval package and stamped plans supplied by the seller. Floor plans are approximate and not to scale. Buyer to verify all information, including permit status, plan transferability, tap fees and green-area ownership. Information deemed reliable but not guaranteed.</p>
+  <p>THE AGENCY CHARLOTTE IS AN INDEPENDENTLY OWNED AND OPERATED FRANCHISEE OF THE AGENCY REAL ESTATE FRANCHISING, LLC.</p>
+</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button aria-label="Close">&times;</button><img alt=""></div>
+<script>
+(function(){
+  var lb=document.getElementById('lb'), im=lb.querySelector('img');
+  document.querySelectorAll('figure img').forEach(function(i){
+    i.addEventListener('click',function(){ im.src=i.src; im.alt=i.alt; lb.classList.add('on'); });
+  });
+  lb.addEventListener('click',function(){ lb.classList.remove('on'); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') lb.classList.remove('on'); });
+})();
+</script>
+</body>
+</html>
